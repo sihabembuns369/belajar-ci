@@ -141,13 +141,13 @@
 
             <!-- Nav Item - Messages -->
             <li class="nav-item  no-arrow mx-1">
-              <a class="nav-link" href="#" id="messages" role="button" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="<?=base_url('login')?>" id="messages" role="button" aria-haspopup="true" aria-expanded="false">
                 LOGIN
               </a>
             </li>
 
             <li class="nav-item  no-arrow mx-1">
-              <a class="nav-link" href="#" id="messages" role="button" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="<?=base_url('register')?>" id="messages" role="button" aria-haspopup="true" aria-expanded="false">
                 REGISTRASI
               </a>
             </li>
