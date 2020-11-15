@@ -41,9 +41,39 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?=base_url('')?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Home</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?=base_url('about')?>">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>About</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?=base_url('service')?>">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>My Service</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?=base_url('skills')?>">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Add Skills</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?=base_url('program')?>">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Program Kerja</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?=base_url('prestasi')?>">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>TambahPrestasi</span></a>
       </li>
 
       <!-- Divider -->
@@ -67,65 +97,6 @@
             <a class="collapse-item" href="cards.html">Cards</a>
           </div>
         </div>
-      </li>
-
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Addons
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
       </li>
 
       <!-- Divider -->
@@ -167,6 +138,19 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item  no-arrow mx-1">
+              <a class="nav-link" href="#" id="messages" role="button" aria-haspopup="true" aria-expanded="false">
+                LOGIN
+              </a>
+            </li>
+
+            <li class="nav-item  no-arrow mx-1">
+              <a class="nav-link" href="#" id="messages" role="button" aria-haspopup="true" aria-expanded="false">
+                REGISTRASI
+              </a>
+            </li>
 
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
@@ -236,6 +220,7 @@
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
               </div>
             </li>
+
 
             <!-- Nav Item - Messages -->
             <li class="nav-item dropdown no-arrow mx-1">
@@ -401,96 +386,6 @@
                   </a>
                   <a href="#" class="btn btn-danger btn-circle btn-lg">
                     <i class="fas fa-trash"></i>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Brand Buttons -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Brand Buttons</h6>
-                </div>
-                <div class="card-body">
-                  <p>Google and Facebook buttons are available featuring each company's respective brand color. They are used on the user login and registration pages.</p>
-                  <p>You can create more custom buttons by adding a new color variable in the <code>_variables.scss</code> file and then using the Bootstrap button variant mixin to create a new style, as demonstrated in the <code>_buttons.scss</code> file.</p>
-                  <a href="#" class="btn btn-google btn-block"><i class="fab fa-google fa-fw"></i> .btn-google</a>
-                  <a href="#" class="btn btn-facebook btn-block"><i class="fab fa-facebook-f fa-fw"></i> .btn-facebook</a>
-
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-lg-6">
-
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Split Buttons with Icon</h6>
-                </div>
-                <div class="card-body">
-                  <p>Works with any button colors, just use the <code>.btn-icon-split</code> class and the markup in the examples below. The examples below also use the <code>.text-white-50</code> helper class on the icons for additional styling, but it is not required.</p>
-                  <a href="#" class="btn btn-primary btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-flag"></i>
-                    </span>
-                    <span class="text">Split Button Primary</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-success btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-check"></i>
-                    </span>
-                    <span class="text">Split Button Success</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-info btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-info-circle"></i>
-                    </span>
-                    <span class="text">Split Button Info</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-warning btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-exclamation-triangle"></i>
-                    </span>
-                    <span class="text">Split Button Warning</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-danger btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-trash"></i>
-                    </span>
-                    <span class="text">Split Button Danger</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-secondary btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                    <span class="text">Split Button Secondary</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-light btn-icon-split">
-                    <span class="icon text-gray-600">
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                    <span class="text">Split Button Light</span>
-                  </a>
-                  <div class="mb-4"></div>
-                  <p>Also works with small and large button classes!</p>
-                  <a href="#" class="btn btn-primary btn-icon-split btn-sm">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-flag"></i>
-                    </span>
-                    <span class="text">Split Button Small</span>
-                  </a>
-                  <div class="my-2"></div>
-                  <a href="#" class="btn btn-primary btn-icon-split btn-lg">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-flag"></i>
-                    </span>
-                    <span class="text">Split Button Large</span>
                   </a>
                 </div>
               </div>
